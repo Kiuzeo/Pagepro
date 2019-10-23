@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: "Gotham Narrow Thin", "Gotham Bold";
+	src: url('Gotham.eot?') format('eot'),url('GothamXNarrow.eot?') format('eot'),
+         url('Gotham.otf') format('truetype'),url('GothamXNarrow.otf') format('truetype'),
+         url('Gotham.woff') format('woff'),url('GothamXNarrow.woff') format('woff'),
+         url('Gotham.svg#GOTHAM') format('svg'), url('Gotham.svg#GOTHAMXNARROW') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+body{
+	margin: auto;
+    font-size: 16px;
+    font-style: normal;
+
+    }
+
+.bandeau{
+    
+    background: url(texture.png);
+    height: 100px;
+	width: 1920px;
+    background-attachment: fixed;
+}
+
+.carre{
+   position: absolute;
+   margin-left: 10px;
+}
+
+.name,.alias{
+    
+    margin-top: 15px;
+}
+
+.name{
+	font: "Gotham Bold";
+	color: white;
+    margin-bottom: -20px;
+    padding-top: 10px;
+}
+
+.alias{
+	font: "Gotham Narrow Thin";
+	color: #eb522f;
+    text-align: center;
+    font-style: italic;
+}
