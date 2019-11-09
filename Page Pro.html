@@ -12,25 +12,31 @@
         
        <!-- Bandeau Haut -->
         
-        <header>
+        <header class="bandeau">
+            
            <!-- Pseudo;Logo;RésauxSociaux;Photo;PrenomNom -->
+            <div class="zonelogo">
+            <img src="logo.png" class="logo" alt="logo"><!-- Logo -->
+            </div>
+            <div class="zonepseudo">
             <p class="pseudo">
                Kiuzeo <!-- Pseudo -->
             </p>
-            <img src="logo.png" class="logo" alt="logo"><!-- Logo -->
-            <p class="Prenom">Killian Rouzée</p><!-- PrenomNom -->
+            </div>
+            <div class="zonephoto">
             <img src="pp.png" class="pp" alt="Photo de profil"><!-- Photo -->
-            <nav class="ressoc"><!-- RésauxSociaux -->
-                <img src="facebook.png" alt="Facebook">
-                <img src="logoinstagram.png" alt="Instagram">
-                <img src="logolinkedin.png" alt="Linkedin">
-            </nav>
+            </div>
+            <!-- RésauxSociaux -->
+                 <div class="zonefacebook"><img src="facebook.png" class="ressoc" alt="Facebook"></div>
+                 <div class="zoneinstagram"><img src="logoinstagram.png" class="ressoc" alt="Instagram"></div>
+                 <div class="zonelinkedin"><img src="logolinkedin.png" class="ressoc" alt="Linkedin"></div>
         </header>
         
         <!-- Bloc info 1 -->
         
+        <div class="recthistoire">
         <nav class="histoire"> <!-- MonHistoire -->
-            <ul>
+            <ul class="textehistoire">
                
                 <li><p>Plus jeune, j'incarnais une femme dans une pièce de théâtre, à l'école :robe et talons hauts. Peu à l'aise depuis cette hauteur, je m'effondrais 
                     devant tout le public signant ainsi à la fois l'arrêt du port de talons et ma future carrière de comédien.</p></li> <!-- Paragraphe 1 -->
@@ -42,25 +48,30 @@
                         hilarante. D’après eux, je cherche tout de même à les faire sourire quoiqu’il arrive.</p></li> <!-- Paragraphe 3 -->
             </ul>
         </nav>
-        
+        </div>
         <!-- Bloc info 2 -->
-        
+        <div class="rectformation">
         <nav class="formation"> <!-- Formation -->
-            <ul>
+            <ul class="texteformation">
                 <li><p>Brevet des collèges (2015-2016)</p></li> <!-- Paragraphe 1 -->
                 <li><p>Baccalauréat STI2D (2018-2019)</p></li> <!-- Paragraphe 2 -->
                 <li><p>La Normandie Web School</p></li> <!-- Paragraphe 3 -->
             </ul>
         </nav>
+        </div>
         
         <div class="citation1"><!-- Citation1 --> 
-            <p>“Fais de ta vie un rêve, et d'un rêve, une réalité.”</p>
-            <p>- Antoine St-Exupéry</p>
+            <div class="rectcitation">
+            <p class="phrase">“Fais de ta vie un rêve, et d'un rêve, une réalité.”</p>
+            <p class="source">- Antoine St-Exupéry</p>
+            </div>
         </div>
         
         <div class="citation2"><!-- Citation2 --> 
-            <p>“Je finis toujours le travail pour lequel on me paie.”</p>
-            <p>film Le bon, la brute et le truand</p>
+            <div class="rectcitation2">
+            <p class="phrase">“Je finis toujours le travail pour lequel on me paie.”</p>
+            <p class="source">film Le bon, la brute et le truand</p>
+            </div>
         </div>
         
         <!-- Bloc info 3 -->
