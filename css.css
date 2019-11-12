@@ -1,270 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
 body {
-    margin: 0px;
-    background-image: url("backtel.png");
-    
+  margin: 0px;
+  background-image: url("backtel.png");
 }
 
-.bandeau,.histoire,.formation,.phrase,.slogan,.gridbouton{
-    font-family: "nexa bold";
+.bandeau,
+.histoire,
+.formation,
+.phrase,
+.slogan,
+.gridbouton,
+.citation__phrase {
+  font-family: "Raleway", sans-serif;
+  font-weight:bold ;
 }
 
-.source,.txtcarre{
-    font-family: "nexa light";
+.source,
+.txtcarre,
+.citation__source {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400 ;
 }
 
 /*Bandeau */
 
-.bandeau{
-    display: grid;
-    grid-template-columns: repeat(2, 0.7fr) repeat(8, 1fr);
-    width: auto;
-    height: 77px;
-    background-color: #E14141;
+.bandeau {
+  display: grid;
+  grid-template-columns: repeat(2, 0.7fr) repeat(8, 1fr);
+  width: auto;
+  height: 77px;
+  background-color: #e14141;
 }
 
-.zonelogo { 
-    grid-area: 1 / 1 / 2 / 2; 
+.zonelogo {
+  grid-area: 1 / 1 / 2 / 2;
 }
-.zonepseudo { 
-    grid-area: 1 / 2 / 2 / 3;
+.zonepseudo {
+  grid-area: 1 / 2 / 2 / 3;
 }
-.zonephoto { 
-    grid-area: 1 / 3 / 3 / 7;
+.zonephoto {
+  grid-area: 1 / 3 / 3 / 7;
 }
-.zonefacebook { 
-    grid-area: 1 / 8 / 2 / 9; 
-
+.zonefacebook {
+  grid-area: 1 / 8 / 2 / 9;
 }
 .zoneinstagram {
-    grid-area: 1 / 9 / 2 / 10; 
+  grid-area: 1 / 9 / 2 / 10;
 }
-.zonelinkedin{ 
-    grid-area: 1 / 10 / 2 / 11; 
-} 
-
-.pseudo{
-    margin-top:28px;
-    font-size: 17px;
+.zonelinkedin {
+  grid-area: 1 / 10 / 2 / 11;
 }
 
-.logo{
-    text-align: center;
-    margin: 13px;
-    height: 50px;
+.pseudo {
+  margin-top: 28px;
+  font-size: 17px;
 }
 
-.ressoc{
-    margin-top: 30px;
-    width: 20px;
+.logo {
+  text-align: center;
+  margin: 13px;
+  height: 50px;
 }
 
-.pp{
-    border-radius:100%;
-    margin-top:25px;
-    height: 150px;
+.ressoc {
+  margin-top: 30px;
+  width: 20px;
+}
+
+.pp {
+  border-radius: 100%;
+  margin-top: 25px;
+  height: 150px;
 }
 
 /*Histoire*/
 
-.recthistoire{
-    display: grid;
-    grid-template-columns: 0.1fr 2fr 0.1fr;
-    margin-top: 120px;
+.recthistoire {
+  display: grid;
+  grid-template-columns: 0.1fr 2fr 0.1fr;
+  margin-top: 120px;
 }
 
-.histoire{
-    background-color: #000526;
-    border-radius:5%;
-    grid-area: 1 / 2 / 4 / 3  ;
+.histoire {
+  background-color: #000526;
+  border-radius: 5%;
+  grid-area: 1 / 2 / 4 / 3;
 }
 
-.textehistoire{
-    margin: 20px;
-    margin-left: -10px;
-    font-size: 14px;
-    color: white;
+.textehistoire {
+  margin: 20px;
+  margin-left: -10px;
+  font-size: 14px;
+  color: white;
 }
 
 /*Formation*/
 
-.rectformation{
-    display: grid;
-    grid-template-columns: 0.1fr 1fr 0.1fr;
-    grid-auto-rows: 1fr;
-    margin-top:450px;
+.rectformation {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-auto-rows: 1fr;
+  margin-top: 450px;
+  padding-bottom:  80px;
 }
 
-.formation{
-    background-color: white;
-    border-radius:3%;
-    grid-area: 1 / 2 / 4 / 3  ;
+.formation {
+  background-color: white;
+  border-radius: 3%;
+  grid-area: 1 / 2 / 4 / 3;
 }
 
-.texteformation{
-    margin: 20px;
-    margin-left: -10px;
-    font-size: 15px;
-    color: #E14141;
+.texteformation {
+  margin: 20px;
+  margin-left: -10px;
+  font-size: 15px;
+  color: #e14141;
 }
 
 /* Citations */
 
-#citation1{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-area: "citation1" ".";
-    margin-top:71px;
-   
+.citespace{
+  padding-bottom: 80px;
 }
 
-#citation2{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-area: "." "citation2";
-    margin-top:71px;
+.citation__group {
+  margin-top: 71px;
+  background: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-#rectcitation{
-    background-color: white;
-    grid-area: citation1;
-    border-bottom-right-radius: 3%;
-    border-top-right-radius: 3%;
-    margin-top: 71px;
-    margin-right: 20%;
+.citation__group--left {
+  border-bottom-right-radius: 3%;
+  border-top-right-radius: 3%;
+  width: 70%;
 }
 
-#rectcitation2{
-    background-color: white;
-    grid-area: citation2;
-    border-bottom-left-radius: 3%;
-    border-top-left-radius: 3%;
-    margin-top: 71px;
-    margin-left: 20%;
+.citation__group--right {
+  border-bottom-left-radius: 3%;
+  border-top-left-radius: 3%;
+  width: 70%;
+  position: absolute;
+  right: 0;
 }
 
-.phrase{
-    color: #1F2F5D;
-    text-align: center;
+.citation__phrase {
+  color: #1f2f5d;
+  text-align: center;
 }
 
-.source{
-    text-align: center;
-    margin-top: -10px;
-    font-size: 15px;
-    color: #E14141;
+.citation__source {
+  text-align: center;
+  margin-top: -10px;
+  font-size: 15px;
+  color: #e14141;
 }
 
 /* Bloc info 3 */
 
-.zoneslogan{
-    
-    margin-top: 500px;
+.zoneslogan {
+  margin-top: 580px;
 }
 
-.slogan{
-    color: #1F2F5D;
-    text-align: center;
-    font-size: 26px;
+.slogan {
+  color: #1f2f5d;
+  text-align: center;
+  font-size: 26px;
 }
 
-.zonecercle{
-    text-align: center;
+.zonecercle {
+  text-align: center;
 }
 
-.cercle{
-    height: 20px;
+.cercle {
+  height: 20px;
 }
 
-#carrecouleur{
-    display: grid;
-    margin-top: 20px;
-    grid-auto-columns: repeat(3, 1fr);
-    margin-bottom: 4px;
+#carrecouleur {
+  display: grid;
+  margin-top: 20px;
+  grid-auto-columns: repeat(3, 1fr);
+  margin-bottom: 4px;
 }
 
-#carre1{
-    background-color: #E14141;
-    grid-area: 1 / 1 / 2 / 2;
-    height: 120px;
-    width: auto;
+#carre1 {
+  background-color: #e14141;
+  grid-area: 1 / 1 / 2 / 2;
+  height: 120px;
+  width: auto;
 }
 
-#carre2{
-    background-color: #000526;
-    grid-area: 1 / 2 / 2 / 3;
-    height: 120px;
-    width: auto;
+#carre2 {
+  background-color: #000526;
+  grid-area: 1 / 2 / 2 / 3;
+  height: 120px;
+  width: auto;
 }
 
-#carre3{
-    background-color: #1F2F5D;
-    grid-area: 1 / 3 / 2 / 4;
-    height: 120px;
-    width: auto;
+#carre3 {
+  background-color: #1f2f5d;
+  grid-area: 1 / 3 / 2 / 4;
+  height: 120px;
+  width: auto;
 }
 
-.txtcarre{
-    color: white;
-    text-align: center;
-    margin-top: 50px;
+.txtcarre {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
 }
 
 /**/
 
-.rectbluemarin{
-    height: 286px;
-    background-color: #000526;
+.rectbluemarin {
+  height: 286px;
+  background-color: #000526;
 }
 
-.prev{
-    text-align: center;
-    
+.prev {
+  text-align: center;
 }
 
-.imgprev{
-    margin-top: 36px;
-    border-radius: 5%;
+.imgprev {
+  margin-top: 36px;
+  border-radius: 5%;
 }
 
 /* boutons */
 /* 2128 */
 
-.gridbouton{
-    display: grid;
-    margin-top: 42px;
-    grid-template-columns: 0.5fr 1fr 0.5fr 1fr 0.5fr;
+.gridbouton {
+  display: grid;
+  margin-top: 42px;
+  grid-template-columns: 0.5fr 1fr 0.5fr 1fr 0.5fr;
 }
 
-.portfolio{
-    width: 151px;
-    height: 38px;
-    grid-area:  1 / 2 / 2 / 3;
-    background-color: #1F2F5D;
+.portfolio {
+  width: 151px;
+  height: 38px;
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: #1f2f5d;
 }
 
-.txtbouton{
-    color: white;
-    margin-top: 8px;
-    text-align: center;
+.txtbouton {
+  color: white;
+  margin-top: 8px;
+  text-align: center;
 }
 
-.contact{
-    width: 151px;
-    height: 38px;
-    grid-area:  1 / 4 / 2 / 5;
-    background-color: #1F2F5D;
+.contact {
+  width: 151px;
+  height: 38px;
+  grid-area: 1 / 4 / 2 / 5;
+  background-color: #1f2f5d;
 }
 
 /*footer*/
 
-.footer{
-    height: 42px;
-    width: auto;
-    text-align: center;
-    background-color: #101010;
+.footer {
+  height: 42px;
+  width: auto;
+  text-align: center;
+  background-color: #101010;
 }
 
-.signature{
-    margin-top: 3px;
-    height: 30px;
+.signature {
+  margin-top: 3px;
+  height: 30px;
 }
